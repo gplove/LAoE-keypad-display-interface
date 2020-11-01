@@ -8,9 +8,11 @@ The book’s chapters on building the ‘computer’ add a few features that see
 
 
 Keypad functions
+
 The keypad allows entry of an 8-bit hexadecimal number (MSB first) from two key presses for output to the keypad data bus. The entered number is displayed live on the LCD in both hexadecimal and binary. As with the ‘official’ board it also provides control signals via three slide switches and five pushbuttons generating the six output signals. The pushbuttons are hardware debounced and the keypad itself is debounced in software through the Keypad.h library (by Mark Stanley and Alexander Brevig). There is an additional ‘clear’ button which sets the output to a high impedance state (indicated on the LCD). The control slide switches have bi-colour LEDs to indicate status (Green=LOW asserted, Red=HIGH asserted). Frequency is selected by a switch instead of the original’s jumper and is also displayed on the LCD. 
 
 Display functions
+
 All information is displayed on a 20-column x 4-row LCD driven using the I2C protocol via a Serial Interface Module (backpack), both readily available on eBay. 
 Inputs: 	The board can take in 32 lines of external data (normally 16 for the address bus, 8 for the data bus and 8 for the keypad) for display.
 Display:	The external 32 bits are displayed in binary and hexadecimal on four lines with titles indicating the source (Address, Data, and Input) and unlike the original there is no switching or multiplexing necessary.
