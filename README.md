@@ -19,4 +19,4 @@ Display:	The external 32 bits are displayed in binary and hexadecimal on four li
 
 Xilinx CPLD board modification
 
-The board shown in ...... is the one I’m using for the labs (two are needed), programmed using the Xilinx Platform Cable USB with iMPACT (part of the Xilinx ISE suite). All the IO pins are needed for the labs and all are broken out to headers on the board except P1 (labelled CLK on the board) which is instead linked to the on-board 50MHz crystal. This is easily fixed by removing the 0Ω resistor labelled R9 on the rear of the board. 
+The board shown in 'Xilinx CPLD board.png' is the one I’m using for the labs (two are needed), programmed using the Xilinx Platform Cable USB with iMPACT (part of the Xilinx ISE suite). All the IO pins are needed for the labs and all are broken out to headers on the board except P1 (labelled CLK on the board) which is instead linked to the on-board 50MHz crystal. This is easily fixed by removing the 0Ω resistor labelled R9 on the rear of the board. 
