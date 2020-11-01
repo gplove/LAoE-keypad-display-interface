@@ -17,3 +17,6 @@ All information is displayed on a 20-column x 4-row LCD driven using the I2C pro
 Inputs: 	The board can take in 32 lines of external data (normally 16 for the address bus, 8 for the data bus and 8 for the keypad) for display.
 Display:	The external 32 bits are displayed in binary and hexadecimal on four lines with titles indicating the source (Address, Data, and Input) and unlike the original there is no switching or multiplexing necessary.
 
+Xilinx CPLD board modification
+
+The board shown in ...... is the one I’m using for the labs (two are needed), programmed using the Xilinx Platform Cable USB with iMPACT (part of the Xilinx ISE suite). All the IO pins are needed for the labs and all are broken out to headers on the board except P1 (labelled CLK on the board) which is instead linked to the on-board 50MHz crystal. This is easily fixed by removing the 0Ω resistor labelled R9 on the rear of the board. 
