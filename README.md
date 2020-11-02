@@ -4,7 +4,9 @@ The official board documentation notes that two 8-bit transparent latches are no
 The book’s chapters on building the ‘computer’ add a few features that seem rightfully placed with the keypad, so I have incorporated these on the board. They are:
 
 •	The additional KD8 and KD9 inputs via DIP switches
+
 •	The SYNCLOAD* and RST* functions via DIP switches
+
 •	The LOAD* function via a momentary pushbutton
 
 Keypad functions
@@ -16,11 +18,13 @@ Display functions
 All information is displayed on a 20-column x 4-row LCD driven using the I2C protocol via a Serial Interface Module (backpack), both readily available on eBay.
 
 Inputs: 	The board can take in 32 lines of external data (normally 16 for the address bus, 8 for the data bus and 8 for the keypad) for display.
+
 Display:	The external 32 bits are displayed in binary and hexadecimal on four lines with titles indicating the source (Address, Data, and Input) and unlike the original there is no switching or multiplexing necessary.
 
 Connections
 
-Power is via a centre positive barrel jack. All signal connections are made via IDC connectors. The IDC connectors can be replaced by either male or female header pins. 
+Power is via a centre positive barrel jack. All signal connections are made via IDC connectors. The IDC connectors can be replaced by either male or female header pins.
+
 •	IDC 1 takes the 16 address lines
 •	IDC 2 takes the 8 data lines and 8 keypad lines
 •	IDC 3 takes all the control signals
