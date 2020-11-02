@@ -4,7 +4,7 @@ const byte colPins [4] = {9, 8, 7, 6}, rowPins [4] = {5, 4, 3, 2};              
 const byte number [16] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};                                          // keypad map array
 const byte INH = 10, FREQ = 11, CLR = 12, SER = 13, OE = 14, RCLK = 15, SRCLK = 16, SRCLR = 17, FREQOUT = 18;             // define control pins
 byte digit [2] = {0, 1};
-Keypad KPad = Keypad(makeKeymap(keymap), rowPins, colPins, 4, 4);                                                         // setup keypad
+Keypad KPad (makeKeymap(keymap), rowPins, colPins, 4, 4);                                                                 // setup keypad
 
 void setup() {
   pinMode(INH, OUTPUT);
