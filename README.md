@@ -3,11 +3,11 @@ Readers of Learning the Art of Electronics (A Hands-On Lab Course by Thomas C. H
 The official board documentation notes that two 8-bit transparent latches are normally held in transparent mode so, I presume, are rarely used. I opted for an off-board solution using two 74HC573 IC’s and have also designed a separate PCB to implement this feature. It has two separate latch-enable inputs and a switch to combine them and is easily connected to any bus that needs latching.
 The book’s chapters on building the ‘computer’ add a few features that seem rightfully placed with the keypad, so I have incorporated these on the board. They are:
 
-•	The additional KD8 and KD9 inputs via DIP switches
+     •	The additional KD8 and KD9 inputs via DIP switches
 
-•	The SYNCLOAD* and RST* functions via DIP switches
+     •	The SYNCLOAD* and RST* functions via DIP switches
 
-•	The LOAD* function via a momentary pushbutton
+     •	The LOAD* function via a momentary pushbutton
 
 Keypad functions
 
