@@ -26,7 +26,9 @@ Connections
 Power is via a centre positive barrel jack. All signal connections are made via IDC connectors. The IDC connectors can be replaced by either male or female header pins.
 
 •	IDC 1 takes the 16 address lines
+
 •	IDC 2 takes the 8 data lines and 8 keypad lines
+
 •	IDC 3 takes all the control signals
 
 LCD and I2C Serial Interface Module modifications
