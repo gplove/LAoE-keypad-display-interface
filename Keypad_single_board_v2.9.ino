@@ -14,7 +14,7 @@ void setup() {
   
 void loop() {
   byte i = 0;
-  if (digitalRead(CLR)){                                                   // if CLR button NOT pressed
+  if (digitalRead(CLR)) {                                                  // if CLR button NOT pressed
     do{ char key = KPad.getKey();
       if (key) {                                                           // has keypad been pressed?
         if (key >= 65) { key = key-55; }                                   // map ASCII codes to number array elements (A to 10....F to 15)
@@ -27,7 +27,7 @@ void loop() {
     outputControl(LOW, LOW, HIGH);                                         // sets OE, INH and SRCLR
     digitalWrite(RCLK, LOW);
     shiftOut(SER, SRCLK, MSBFIRST, (digit [0]*16)+digit [1]);              // shift out binary number from the two digits
-    digitalWrite(RCLK, HIGH);}
+    digitalWrite(RCLK, HIGH); }
   else{ outputControl(HIGH, HIGH, LOW); }                                  // if CLR button IS pressed set OE, INH and SRCLR
 } 
         
